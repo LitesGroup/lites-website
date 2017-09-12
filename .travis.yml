@@ -1,13 +1,14 @@
-sudo:          false
-language:      node_js
-node_js:
-  - "node"
-install:       npm install
-script:
-  - npm test
-  - gulp
+---
 cache:
   directories:
     - node_modules
- notifications:
-    slack: lites-team:HDj0ZpIrgLM5vhugukCr7tID
+install: "npm install"
+language: node_js
+node_js:
+  - node
+notifications:
+  slack: "lites-team:HDj0ZpIrgLM5vhugukCr7tID"
+script:
+  - "npm test"
+  - gulp
+sudo: false
