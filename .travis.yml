@@ -9,3 +9,5 @@ script:
 cache:
   directories:
     - node_modules
+ notifications:
+    slack: lites-team:HDj0ZpIrgLM5vhugukCr7tID
