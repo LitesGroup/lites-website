@@ -1,0 +1,24 @@
+{
+    "title": "Website",
+    "name": "lites-website",
+    "version": "0.0.1-beta",
+    "description": "",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^4.0.0-beta",
+        "jquery": "^3.2.1",
+        "popper.js": "1.12.3"
+    },
+    "devDependencies": {
+        "browser-sync": "2.18.13",
+        "gulp": "^3.9.1"
+    }
+}
