@@ -14,7 +14,7 @@ script:
   - "npm test"
   - gulp
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker build -t litesteam/website: `git rev-parse --short HEAD` .
-  - docker push litesteam/website: `git rev-parse --short HEAD`
+  - docker build -t litesteam/website:`git rev-parse --short HEAD` .
+  - docker push litesteam/website:`git rev-parse --short HEAD`
 
 sudo: required
