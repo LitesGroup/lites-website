@@ -13,9 +13,8 @@ notifications:
 script:
   - "npm test"
   - gulp
-  - export TAG= `git rev-parse --short HEAD`
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker build -t litesteam/website:$TAG .
-  - docker push litesteam/website:$TAG
+  - docker build -t litesteam/website: `git rev-parse --short HEAD` .
+  - docker push litesteam/website: `git rev-parse --short HEAD`
 
 sudo: required
